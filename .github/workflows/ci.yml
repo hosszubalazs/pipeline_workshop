@@ -19,11 +19,6 @@ jobs:
       - name: Start app and run Cypress tests
         run: npm run e2e:full
 
-      - name: Upload testing reports
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist/pipeline-workshop
-
       - name: Upload test results
         uses: actions/upload-pages-artifact@v3
         with:
